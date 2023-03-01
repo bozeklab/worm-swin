@@ -139,8 +139,8 @@ data = dict(
         ]),
     val=dict(
         type='CocoDataset',
-        img_prefix='../data/cecad_worms/images/',
-        ann_file='../data/cecad_worms/coco_annotations/test_annotations.json',
+        img_prefix='../data/csb-1/images/',
+        ann_file='../data/csb-1/coco_annotations/test_annotations.json',
         classes=('worm', ),
         pipeline=[
             dict(type='LoadImageFromFile'),
@@ -163,8 +163,8 @@ data = dict(
         ]),
     test=dict(
         type='CocoDataset',
-        img_prefix='../data/cecad_worms/images/',
-        ann_file='../data/cecad_worms/coco_annotations/test_annotations.json',
+        img_prefix='../data/csb-1/images/',
+        ann_file='../data/csb-1/coco_annotations/test_annotations.json',
         classes=('worm', ),
         pipeline=[
             dict(type='LoadImageFromFile'),

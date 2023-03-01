@@ -3,7 +3,7 @@
 # All rights reserved.
 # License for this file can be found in "pycocotools_license.md" file.
 
-# Modified by Deserno, M. et. al., 2022 for (add paper name)
+# Modified by Deserno, M. et al., 2022
 
 import numpy as np
 import datetime

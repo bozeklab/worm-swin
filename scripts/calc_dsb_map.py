@@ -1,4 +1,4 @@
-# Created by: Deserno, M. et. al., 2022 for (paper name)
+# Created by: Deserno, M. et al., 2022
 # Calculates the DSB mAP for Instance Segmentation results from MMDetection
 
 import itertools
@@ -19,8 +19,7 @@ def dsb_precision(result_matrix, gt_len, pred_len, thresholds):
 
     for thresh_id, thresh in enumerate(thresholds):
         # match objects for theshold
-        iou_matrix[iou_matrix <= thresh] = 0.0
-        gt_assignment, pred_assignment = opt.linear_sum_assignment(1 - iou_matrix)
+        gt_assignment, pred_assignment = opt.linear_sum_assignment(1 - result_matrix)
 
         tp_count = 0
         fp_count = 0
@@ -41,9 +40,8 @@ def dsb_precision(result_matrix, gt_len, pred_len, thresholds):
                 fn_count += 1
                 fp_fn_found = True
 
-            res_iou = result_matrix[gt_ass, pred_ass]
-
             if not fp_fn_found:
+                res_iou = result_matrix[gt_ass, pred_ass]
                 if res_iou > thresh:
                     tp_count += 1
                 else:
