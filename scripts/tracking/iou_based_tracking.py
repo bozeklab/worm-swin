@@ -11,8 +11,6 @@ import numpy as np
 import pycocotools.mask as mask
 import scipy.optimize as opt
 import seaborn as sns
-
-# import argparse
 from alive_progress import alive_bar
 from pycocotools.coco import COCO
 
@@ -394,4 +392,4 @@ if __name__ == "__main__":
             global_tracking_dict, handle, protocol=pickle.HIGHEST_PROTOCOL
         )
 
-    print(f"Done.")
+    print("Done.")
