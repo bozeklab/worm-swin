@@ -16,6 +16,11 @@ We trained on 4 Nvidia Tesla V100-SMX2 32 GB GPUs, 6 cores of an Intel Xeon Gold
 
 ![tracked c. elegans](readme_examples/tracking.gif)
 
+## Datasets
+* [WormSwin Datasets](https://doi.org/10.5281/zenodo.7456803) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7456803.svg)](https://doi.org/10.5281/zenodo.7456803)
+* [BBBC010](https://bbbc.broadinstitute.org/BBBC010)
+
+
 ## Citation
 ```
 @article{deserno_wormswin_2023,
