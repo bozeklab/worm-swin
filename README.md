@@ -1,5 +1,5 @@
 # WormSwin
-Repository for [WormSwin: Instance segmentation of C. elegans using vision transformer](doi.org/10.1038/s41598-023-38213-7) as appeared in Nature Scientific Reports 2023.
+Repository for [WormSwin: Instance segmentation of C. elegans using vision transformer](https://doi.org/10.1038/s41598-023-38213-7) as appeared in Nature Scientific Reports 2023.
 
 Example images taken from the paper.
 
