@@ -40,6 +40,7 @@ Training/Fine-tuning can be skipped if our pre-trained weights from [Zenodo](htt
 
 The results .pkl file can be opened using python.
 It contains detections per image. For each image MMDetection outputs the results form of confidence scores + bounding boxes at index 0 and size + segmentations in RLE format at index 1.
+An example script to view and print prediction results can be found in `scripts/eval_results.py`.
 
 ## Datasets
 
