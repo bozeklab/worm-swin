@@ -12,9 +12,9 @@ import pycocotools.mask as mask
 import scipy.ndimage as ndimage
 from PIL import Image
 
-RESULT_PKL = "/Users/maurice/sciebo/results/htc++/htc_24/results.pkl"  # path to results .pkl file
-IMGS_PATH = "/Users/maurice/Data/Datasets/worms_from_matthias/extracted_frames/"  # Path to images
-GT_JSON = "/Users/maurice/Data/Datasets/worms_from_matthias/coco_annotations/new_test_annotations.json"  # Path to GT annotation file
+RESULT_PKL = "./results.pkl"  # path to results .pkl file
+IMGS_PATH = "./csb-1/images/"  # Path to images
+GT_JSON = "./csb-1/test_annotations.json"  # Path to GT annotation file
 
 SCORE_THRES = 0.5  # Detection confidence threshold
 # Threshold to reject overlapping predictions (set >1.0 to deactivate)
